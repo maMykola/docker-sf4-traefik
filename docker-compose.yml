@@ -63,3 +63,4 @@ services:
             - local
         labels:
             - traefik.http.routers.maildev-${APP_PROJECT}.rule=Host(`maildev-${APP_PROJECT}.sf4.local`)
+            - traefik.http.services.maildev-${APP_PROJECT}.loadbalancer.server.port=80
